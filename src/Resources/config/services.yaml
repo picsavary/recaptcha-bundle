@@ -1,0 +1,18 @@
+services:
+  amps_recaptcha.type:
+    class: Amps\RecaptchaBundle\Type\RecaptchaSubmitType
+    tags: ['form.type']
+    arguments:
+      $key: '%amps_recaptcha.key%' #INJECTÉ DANS LE CONTAINER
+  amps_recaptcha.validator:
+    class: Amps\RecaptchaBundle\Constraints\RecaptchaValidator
+    tags: ['validator.constraint_validator']
+    autowire: true
+
+  ReCaptcha\ReCaptcha: # recaptcha.recaptcha changed to enable autowiring #used as this by RecaptchaValidator.php
+    class: ReCaptcha\ReCaptcha #from google
+    arguments:
+      $secret: '%amps_recaptcha.secret%'
+      $requestMethod: '@ReCaptcha\RequestMethod'
+  ReCaptcha\RequestMethod: '@ReCaptcha\RequestMethod\CurlPost'
+  ReCaptcha\RequestMethod\CurlPost: ~
