@@ -10,6 +10,7 @@ Required: Symfony ^4.3 - Php ^7.2
 
 # RecaptchaBundle for Symfony ^4.3
 • RecaptchaBundle is a way for you to use Google Recaptcha v3 invisible protection in your Symfony ^4.3 application.
+
 • Load RecaptchaBundle project files near you projects' and set it *real* path in your projects' composer.json file, eg:
 ```console
 "repositories": [
@@ -49,13 +50,11 @@ class contactType extends AbstractType
 {
     .../...
    $builder->add('captcha',
-                // PEU IMPORTE LE NOM,
-                // CAR RECAPTCHASUBMITTYPE N’EST PAS MAPPÉ
                 RecaptchaSubmitType::class ,
                 [
-                    'label' => 'Envoi',
+                    'label' => 'Send',
                     'attr' => [
-                        'class' => 'btn bg_navigation'
+                        'class' => 'btn btn-default'
                     ]
                 ]
             )
@@ -68,6 +67,7 @@ You can also access this service directly using the id
 
 ## Thanks
 Thanks to Google Recaptcha https://www.google.com/recaptcha/intro/v3.html.
+
 Thanks to Grafikart https://www.grafikart.fr/tutoriels/recaptcha-bundle-1094
 
 ## Contributing
