@@ -62,8 +62,6 @@ class contactType extends AbstractType
 .../...
 }
 ```
-You can also access this service directly using the id
-`amps_recaptcha-bundle`.
 
 ## Thanks
 Thanks to Google Recaptcha https://www.google.com/recaptcha/intro/v3.html.
