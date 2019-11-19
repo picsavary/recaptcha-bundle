@@ -41,7 +41,7 @@ And... that's it! If you're *not* using Symfony Flex, you'll also
 need to enable the `Amps\RecaptchaBundle\AmpsRecaptchaBundle`
 in your `AppKernel.php` file.
 ## Usage
-This bundle provides a google recaptcha submit type :
+This bundle provides a google recaptcha submit type you can use in your projects as this (eg.):
 ```php
 .../...
 use Amps\RecaptchaBundle\Type\RecaptchaSubmitType;
@@ -66,7 +66,7 @@ class contactType extends AbstractType
 ## Thanks
 Thanks to Google Recaptcha https://www.google.com/recaptcha/intro/v3.html.
 
-Thanks to Grafikart https://www.grafikart.fr/tutoriels/recaptcha-bundle-1094
+Thanks to Grafikart
 
 ## Contributing
 Of course, open source is fueled by everyone's ability to give just a little bit
