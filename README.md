@@ -1,4 +1,4 @@
-# lorem-ipsum-bundle
+# amps/recaptcha-bundle
 
 author: anne marie savary <picsavary@mac.com>
 
