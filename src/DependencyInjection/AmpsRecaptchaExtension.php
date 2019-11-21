@@ -29,7 +29,8 @@ class AmpsRecaptchaExtension extends Extension
      */
     public function load(
         array $configs,
-        ContainerBuilder $container)
+        ContainerBuilder $container
+    )
     {
         $loader = new YamlFileLoader(
             $container,

@@ -10,11 +10,28 @@
         }
     ],
     "require": {
-        "php": "^7.2"
+        "php": "^7.2",
+        "symfony/config": "^4.3",
+        "symfony/form": "^4.3",
+        "symfony/dependency-injection": "^4.3",
+        "symfony/http-kernel": "^4.3"
+
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.3",
+        "symfony/framework-bundle": "^4.3",
+        "symfony/browser-kit": "^4.3",
+        "symfony/yaml": "^4.3",
+        "google/recaptcha": "^1.2"
     },
     "autoload": {
         "psr-4": {
             "Amps\\RecaptchaBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Amps\\RecaptchaBundle\\Tests\\": "tests/"
         }
     }
 }

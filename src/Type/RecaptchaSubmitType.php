@@ -44,7 +44,11 @@ class RecaptchaSubmitType extends AbstractType
         ]);
     }
 
-    public function buildView(FormView $view, FormInterface $form, array $options)
+    public function buildView(
+        FormView $view,
+        FormInterface $form,
+        array $options
+    )
     {
         // REDEFINIR LA VARIABLE LABEL, METTRE À FALSE
         // POUR EVITER QUE LE TEXTTYPE NE METTE EN DOUBLE

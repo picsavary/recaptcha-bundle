@@ -1,5 +1,6 @@
 services:
   amps_recaptcha.type:
+    public: true
     class: Amps\RecaptchaBundle\Type\RecaptchaSubmitType
     tags: ['form.type']
     arguments:
