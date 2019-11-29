@@ -2,12 +2,10 @@
 namespace Amps\RecaptchaBundle\Tests;
 
 use Amps\RecaptchaBundle\AmpsRecaptchaBundle;
-use Amps\RecaptchaBundle\RecaptchaCompilerPass;
 use Amps\RecaptchaBundle\Type\RecaptchaSubmitType;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\Form\Form;
 use Symfony\Component\HttpKernel\Kernel;
 use ReCaptcha\ReCaptcha;
 

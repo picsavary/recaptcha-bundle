@@ -62,7 +62,7 @@ class contactType extends AbstractType
 .../...
 }
 ```
-
+## Test with ./vendor/bin/simple-phpunit
 ## Thanks
 Thanks to Google Recaptcha https://www.google.com/recaptcha/intro/v3.html.
 
