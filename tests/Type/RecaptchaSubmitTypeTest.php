@@ -21,7 +21,7 @@ class RecaptchaSubmitTypeTest extends TestCase
      */
     private $view;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->view = new FormView();
         $requestStack = $this->createMock(RequestStack::class);
