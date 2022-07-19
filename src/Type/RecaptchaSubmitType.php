@@ -59,12 +59,12 @@ class RecaptchaSubmitType extends AbstractType
         $view->vars['button'] = $options['label'];
     }
 
-    public function getBlockPrefix()
+    public function getBlockPrefix(): string
     {
         return 'recaptcha_submit';
     }
 
-    public function getParent()
+    public function getParent(): ?string
     {
         // LE TEXTTYPE (PLUTÔT QUE LE SUBMITTYPE)
         // MET EN PLACE LE SYSTÈME DE VALIDATION
