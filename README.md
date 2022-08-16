@@ -4,11 +4,11 @@ author: anne marie savary <picsavary@icloud.com>
 
 This project and its code is under MIT License
 
-Required: Symfony ^4.3 - Php ^7.2
+Required: Symfony 6.0.* - Php 8.1.4
 
 # Work in progress
 
-# RecaptchaBundle for Symfony ^4.3
+# RecaptchaBundle for Symfony 6.0.*
 • RecaptchaBundle is a way for you to use Google Recaptcha v3 invisible protection in your Symfony ^4.3 application.
 
 • Load RecaptchaBundle project files near you projects' and set it *real* path in your projects' composer.json file, eg:
