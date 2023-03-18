@@ -9,12 +9,6 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-/**
- * Class RecaptchaSubmitType
- *
- * @package Amps\RecaptchaBundle\Type
- *
- */
 class RecaptchaSubmitType extends AbstractType
 {
 

@@ -4,7 +4,7 @@ services:
     class: Amps\RecaptchaBundle\Type\RecaptchaSubmitType
     tags: ['form.type']
     arguments:
-      $key: '%amps_recaptcha.key%' #INJECTÉ DANS LE CONTAINER
+      $key: '%amps_recaptcha.key%' #INJECTÉ DANS LE CONTAINER ## FROM MAIN APP CONFIG/PACKAGES/AMPS_RECAPTCHA.YAML FILE
   amps_recaptcha.validator:
     class: Amps\RecaptchaBundle\Constraints\RecaptchaValidator
     tags: ['validator.constraint_validator']

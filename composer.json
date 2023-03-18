@@ -6,15 +6,15 @@
     "authors": [
         {
             "name": "anne marie savary",
-            "email": "picsavary@icloud.com"
+            "email": "annemarie.pic@orange.fr"
         }
     ],
     "require": {
         "php": "^8.1.4",
-        "symfony/config": "6.0.*",
+        "symfony/config": "6.1.*",
         "symfony/form": "^6.1",
-        "symfony/dependency-injection": "6.0.*",
-        "symfony/http-kernel": "6.0.*"
+        "symfony/dependency-injection": "6.1.*",
+        "symfony/http-kernel": "6.1.*"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "6.0.*",
