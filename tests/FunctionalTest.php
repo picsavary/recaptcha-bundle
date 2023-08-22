@@ -9,7 +9,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel;
 use ReCaptcha\ReCaptcha;
 
-
 class FunctionalTest extends TestCase
 {
     public function testServiceWiring()
