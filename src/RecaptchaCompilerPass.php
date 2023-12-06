@@ -9,7 +9,7 @@ class RecaptchaCompilerPass implements CompilerPassInterface {
     /**
      * You can modify the container here before it is dumped to PHP code.
      */
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container) : void
     {
         if ($container->hasParameter('twig.form.resources')) {
             $resources = $container->getParameter('twig.form.resources') ?: [];
