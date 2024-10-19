@@ -28,7 +28,7 @@ class RecaptchaSubmitType extends AbstractType
         $this->key = $key;
     }
 
-    public function configureOptions(OptionsResolver $resolver)
+    public function configureOptions(OptionsResolver $resolver) : void
     {
         $resolver->setDefaults([
             // CE CHAMP N'EST PAS RELIÉ
@@ -42,8 +42,7 @@ class RecaptchaSubmitType extends AbstractType
         FormView $view,
         FormInterface $form,
         array $options
-    )
-    {
+    ) : void {
         // REDEFINIR LA VARIABLE LABEL, METTRE À FALSE
         // POUR EVITER QUE LE TEXTTYPE NE METTE EN DOUBLE
         // LE BOUTON ENVOYER
